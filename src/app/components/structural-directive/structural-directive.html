@@ -1,0 +1,17 @@
+<!-- This is latest code -->
+@if (tog) {
+  <p>hey im NIX404</p>
+}
+<ul>
+  @for (name of names; track $index) {
+    <li>{{ name }}</li>
+  }
+</ul>
+
+<!-- Below code is deprecated  -->
+<!-- <p *ngIf="tog">hey im NIX404</p>
+<ul>
+  <li *ngFor="let name of names">{{ name }}</li>
+</ul> -->
+
+<button (click)="toggle()">click to toggle</button>
