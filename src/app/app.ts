@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { NewComponent } from './components/new-component/new-component';
 import { Interpolation } from './components/interpolation/interpolation';
 import { PropertyBinding } from './components/property-binding/property-binding';
@@ -8,6 +8,8 @@ import { TwoWayBinding } from './components/two-way-binding/two-way-binding';
 import { StructuralDirective } from './components/structural-directive/structural-directive';
 import { AttributeDirective } from './components/attribute-directive/attribute-directive';
 import { Decorators } from './components/decorators/decorators';
+import { ObservableComponent } from './asynchronous-observables/observable-component/observable-component';
+import { HttpComponent } from './httpClient/http-component/http-component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,11 @@ import { Decorators } from './components/decorators/decorators';
     StructuralDirective,
     AttributeDirective,
     Decorators,
-  ],
+    RouterLink,
+    RouterLinkActive,
+    ObservableComponent,
+    HttpComponent
+],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

@@ -1,0 +1,13 @@
+<h1>Waifu Images</h1>
+@for (item of dataArr; track item.id) {
+  <img [src]="item.url" alt="no-Images" width="100" />
+}
+
+<!-- <img *ngFor="let i of dataArr" [src]="i.url" alt="noImage" width="100" /> -->
+
+<!-- async pipe -->
+<!-- @for (item of (dataArr$ | async); track item.id) {
+  <img [src]="item.url" alt="no-Images" width="100" />
+} -->
+
+<!-- <img *ngFor="let i of dataArr$ | async" [src]="i.url" alt="noImage" width="100" /> -->

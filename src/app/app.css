@@ -1,0 +1,14 @@
+.active{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(35, 87, 1);
+    border: none;
+    background-color: #a9ff87;
+    padding: 4px 8px;
+    border-radius: 20%;
+}
+
+a  {
+    text-decoration: none;
+    color: #000;
+}
