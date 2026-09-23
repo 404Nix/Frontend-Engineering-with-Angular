@@ -8,10 +8,32 @@
   }
 </ul>
 
+@switch (selectTech) {
+  @case ('Java') {
+    <p>This is Java</p>
+  }
+  @case ('.Net') {
+    <p>This is .Net</p>
+  }
+  @case ('Angular') {
+    <p>This is Angular</p>
+  }
+  @default {
+    <p>This is React</p>
+  }
+}
+
 <!-- Below code is deprecated  -->
 <!-- <p *ngIf="tog">hey im NIX404</p>
 <ul>
   <li *ngFor="let name of names">{{ name }}</li>
 </ul> -->
+
+<!-- <div [ngSwitch]="selectTech">
+  <p *ngSwitchCase="'Java'">This is Java</p>
+  <p *ngSwitchCase="'.Net'">This is .Net</p>
+  <p *ngSwitchCase="'Angular'">This is Angular</p>
+  <p *ngSwitchDefault>This is React</p>
+</div> -->
 
 <button (click)="toggle()">click to toggle</button>

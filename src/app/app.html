@@ -3,4 +3,8 @@
 <!-- <app-event-binding></app-event-binding> -->
 <!-- <app-event-binding></app-event-binding> -->
 <!-- <app-two-way-binding></app-two-way-binding> -->
-<app-structural-directive></app-structural-directive>
+<!-- <app-structural-directive></app-structural-directive> -->
+<!-- <app-attribute-directive></app-attribute-directive> -->
+<!-- <app-decorators [message]="text"></app-decorators> -->
+<app-decorators (notify)="receive($event)"></app-decorators>
+<p>{{ message }}</p>

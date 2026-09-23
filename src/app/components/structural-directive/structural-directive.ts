@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class StructuralDirective {
   tog: boolean = true;
+  selectTech: string = 'Angular';
   names: string[] = ['nix', 'NIkhil', 'raju rastogi', 'booba thakur'];
   toggle() {
     this.tog = !this.tog;

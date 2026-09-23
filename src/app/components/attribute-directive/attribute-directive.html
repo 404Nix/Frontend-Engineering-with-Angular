@@ -1,0 +1,13 @@
+<p [ngClass]="isSuccess">attribute-directive-class works!</p>
+<p [ngStyle]="{ color: isSuccess === 'success' ? 'green' : 'red' }">
+  attribute-directive-style works!
+</p>
+
+<style>
+  .success {
+    color: green;
+  }
+  .failed {
+    color: red;
+  }
+</style>
